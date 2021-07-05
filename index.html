@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="application/javascript" async></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img alt="mars planet" class="planet" src="images/mars.png">
+            <img alt="rocket" id="rocketid" class="rocket" src="images/rocket.png">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input id="password" type="password" value="" placeholder="Enter password to unlock" autofocus>
+                <input id="okBtn" type="button" value="ok">
+                <div class="check-buttons">
+                    <input class="inptChBx lock" type="checkbox" disabled>
+                    <input class="inptChBx lock" type="checkbox" disabled>
+                    <input class="inptChBx lock" type="checkbox" disabled>
+                    <input class="inptChBx lock" type="checkbox" disabled>
+                    <input class="inptChBx lock" type="checkbox" disabled>
+                    <input class="inptChBx lock" type="checkbox" disabled>
+                </div>
+                <div class="levers">
+                    <input class="inptRng lock" type="range" min="0" max="100" value="50" disabled>
+                    <input class="inptRng lock" type="range" min="0" max="100" value="50" disabled>
+                    <input class="inptRng lock" type="range" min="0" max="100" value="50" disabled>
+                    <input class="inptRng lock" type="range" min="0" max="100" value="50" disabled>
+                    <input class="inptRng lock" type="range" min="0" max="100" value="50" disabled>
+                </div>
+                <input id="launchBtn" class="inptBtn" type="button" value="launch" disabled>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

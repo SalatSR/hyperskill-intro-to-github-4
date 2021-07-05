@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*          MAIN PARAMETRES         */
+
+.space {
+    position: relative;
+    height: 100vh;
+    background-image: url("images/space.png");
+}
+.planet {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+}
+#rocketid {
+    transition: all 2s ease-in-out;
+    position: absolute;
+    left: 16%;
+    bottom: 30%;
+    width: 15%;
+    transform: rotate(35deg);
+}
+
+/*          CONTROL PANEL           */
+
+.control-panel {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    background: repeating-linear-gradient(45deg,
+    black,
+    black 10px,
+    yellow 10px,
+    yellow 20px);
+}
+.control-panel__inner {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #252424;
+}
+
+.inptChBx, .inptRng, #launchBtn {
+
+}
+
+.check-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+}
+.levers {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+}
+.levers input {
+    width: 10%;
+    border-radius: 5px;
+    transform: rotate(90deg);
+
+}
